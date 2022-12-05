@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "t0VOQRSZXmFSNSQqayOQ2R1nVNlxpbLQ250hRG1RaAKBoKgmUMXnBvqTqTnSaiR+UR2lVJJsSFtRwPiTEYU45w==",
+  "success": true,
+  "projectFilePath": "D:\\Usuario\\Desktop\\MARLON\\TreinaWeb\\GerenciamentoDePacotescomNuGet\\GerenciamentoDePacotescomNuGet.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PC 07\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

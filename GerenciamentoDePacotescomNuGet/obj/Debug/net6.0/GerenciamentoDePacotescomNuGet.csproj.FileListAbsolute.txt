@@ -1,0 +1,17 @@
+D:\Usuario\Desktop\MARLON\TreinaWeb\GerenciamentoDePacotescomNuGet\obj\Debug\net6.0\GerenciamentoDePacotescomNuGet.csproj.AssemblyReference.cache
+D:\Usuario\Desktop\MARLON\TreinaWeb\GerenciamentoDePacotescomNuGet\obj\Debug\net6.0\GerenciamentoDePacotescomNuGet.GeneratedMSBuildEditorConfig.editorconfig
+D:\Usuario\Desktop\MARLON\TreinaWeb\GerenciamentoDePacotescomNuGet\obj\Debug\net6.0\GerenciamentoDePacotescomNuGet.AssemblyInfoInputs.cache
+D:\Usuario\Desktop\MARLON\TreinaWeb\GerenciamentoDePacotescomNuGet\obj\Debug\net6.0\GerenciamentoDePacotescomNuGet.AssemblyInfo.cs
+D:\Usuario\Desktop\MARLON\TreinaWeb\GerenciamentoDePacotescomNuGet\obj\Debug\net6.0\GerenciamentoDePacotescomNuGet.csproj.CoreCompileInputs.cache
+D:\Usuario\Desktop\MARLON\TreinaWeb\GerenciamentoDePacotescomNuGet\bin\Debug\net6.0\GerenciamentoDePacotescomNuGet.exe
+D:\Usuario\Desktop\MARLON\TreinaWeb\GerenciamentoDePacotescomNuGet\bin\Debug\net6.0\GerenciamentoDePacotescomNuGet.deps.json
+D:\Usuario\Desktop\MARLON\TreinaWeb\GerenciamentoDePacotescomNuGet\bin\Debug\net6.0\GerenciamentoDePacotescomNuGet.runtimeconfig.json
+D:\Usuario\Desktop\MARLON\TreinaWeb\GerenciamentoDePacotescomNuGet\bin\Debug\net6.0\GerenciamentoDePacotescomNuGet.dll
+D:\Usuario\Desktop\MARLON\TreinaWeb\GerenciamentoDePacotescomNuGet\bin\Debug\net6.0\GerenciamentoDePacotescomNuGet.pdb
+D:\Usuario\Desktop\MARLON\TreinaWeb\GerenciamentoDePacotescomNuGet\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Usuario\Desktop\MARLON\TreinaWeb\GerenciamentoDePacotescomNuGet\obj\Debug\net6.0\GerenciamentoDePacotescomNuGet.csproj.CopyComplete
+D:\Usuario\Desktop\MARLON\TreinaWeb\GerenciamentoDePacotescomNuGet\obj\Debug\net6.0\GerenciamentoDePacotescomNuGet.dll
+D:\Usuario\Desktop\MARLON\TreinaWeb\GerenciamentoDePacotescomNuGet\obj\Debug\net6.0\refint\GerenciamentoDePacotescomNuGet.dll
+D:\Usuario\Desktop\MARLON\TreinaWeb\GerenciamentoDePacotescomNuGet\obj\Debug\net6.0\GerenciamentoDePacotescomNuGet.pdb
+D:\Usuario\Desktop\MARLON\TreinaWeb\GerenciamentoDePacotescomNuGet\obj\Debug\net6.0\GerenciamentoDePacotescomNuGet.genruntimeconfig.cache
+D:\Usuario\Desktop\MARLON\TreinaWeb\GerenciamentoDePacotescomNuGet\obj\Debug\net6.0\ref\GerenciamentoDePacotescomNuGet.dll
