@@ -1,0 +1,15 @@
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\orientacaoObjetosCSharp\criandoClasses\bin\Debug\net6.0\criandoClasses.exe
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\orientacaoObjetosCSharp\criandoClasses\bin\Debug\net6.0\criandoClasses.deps.json
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\orientacaoObjetosCSharp\criandoClasses\bin\Debug\net6.0\criandoClasses.runtimeconfig.json
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\orientacaoObjetosCSharp\criandoClasses\bin\Debug\net6.0\criandoClasses.dll
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\orientacaoObjetosCSharp\criandoClasses\bin\Debug\net6.0\criandoClasses.pdb
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\orientacaoObjetosCSharp\criandoClasses\obj\Debug\net6.0\criandoClasses.csproj.AssemblyReference.cache
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\orientacaoObjetosCSharp\criandoClasses\obj\Debug\net6.0\criandoClasses.GeneratedMSBuildEditorConfig.editorconfig
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\orientacaoObjetosCSharp\criandoClasses\obj\Debug\net6.0\criandoClasses.AssemblyInfoInputs.cache
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\orientacaoObjetosCSharp\criandoClasses\obj\Debug\net6.0\criandoClasses.AssemblyInfo.cs
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\orientacaoObjetosCSharp\criandoClasses\obj\Debug\net6.0\criandoClasses.csproj.CoreCompileInputs.cache
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\orientacaoObjetosCSharp\criandoClasses\obj\Debug\net6.0\criandoClasses.dll
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\orientacaoObjetosCSharp\criandoClasses\obj\Debug\net6.0\refint\criandoClasses.dll
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\orientacaoObjetosCSharp\criandoClasses\obj\Debug\net6.0\criandoClasses.pdb
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\orientacaoObjetosCSharp\criandoClasses\obj\Debug\net6.0\criandoClasses.genruntimeconfig.cache
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\orientacaoObjetosCSharp\criandoClasses\obj\Debug\net6.0\ref\criandoClasses.dll

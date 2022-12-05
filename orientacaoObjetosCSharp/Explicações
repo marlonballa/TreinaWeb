@@ -1,0 +1,107 @@
+## O que é Orientação a Objetos?
+
+De forma geral, desenvolvemos softwares para atacar problemas do mundo real, seja resolvendo uma limitação, ou otimizando um processo. Por isso, quanto melhor pudermos representar esse contexto do mundo real em nossos programas, provavelmente vamos conseguir atendê-lo melhor.
+
+A Orientação a Objetos entra nesse cenário para nos permitir representar o mundo real em nossos programas de forma eficiente, definindo as características, comportamentos e relações entre as “coisas” envolvidas no contexto.
+
+Trata-se de um paradigma, ou seja, um conjunto de conceitos e técnicas já testados e aprovados ao longo dos anos, que pode ser aplicado às fases de modelagem e desenvolvimento dos softwares. Além disso, esse paradigma não se limita a uma linguagem de programação, na verdade a maioria das linguagens modernas suportam a Orientação a Objetos.
+
+Pilares
+O paradigma da Orientação a Objetos possui quatro conceitos básicos, chamados de pilares. Eles serão descritos brevemente abaixo, e explorados na prática ao longo do curso:
+
+    - Abstração: é o processo de identificar quais elementos do mundo real serão representados no software, e como isso será feito. Precisamos identificar os nomes, as características, comportamentos e relações entre os objetos envolvidos no cenário;
+    - Encapsulamento: é uma técnica que consiste em esconder os detalhes internos de uma classe, expondo apenas aquilo que deve ser público;
+    - Herança: tal como no mundo real, na Orientação a Objetos os elementos podem herdar características e comportamentos de outros. Além de representar de forma fiel o mundo real, essa prática evita a repetição de código e torna mais segura a manutenção;
+    - Polimorfismo: como o próprio nome sugere (poli + morfo) essa é a capacidade de um objeto assumir diferentes formas de acordo com a necessidade.
+
+Podemos usar esse paradigma desde a fase de modelagem dos sistemas, e utilizar por exemplo a UML (Unified Modeling Language) para representar visualmente o contexto que vamos abordar. A UML possui alguns diagramas para ilustrar sob diferentes óticas as classes e objetos, que são os elementos fundamentais da OO. Após essa modelagem, partimos então para o código, e nesse momento basicamente vamos traduzir para a sintaxe da linguagem de programação aquilo que já ilustramos com a UML.
+
+## Revisando Conceitos
+
+    ## O que são classes e objetos?
+
+        - O que são objetos?
+            * Elementos existentes no domínio (conjunto de informações) de um problema. 
+            * "Coisas" do mundo real (ou imaginário) que podem ser identificadas e descritas. 
+
+        - O que são Classes?
+
+## Criando Classes no C#
+
+    UML 
+
+    Conta
+    + NumeroConta
+    + DataAberturaConta
+    + SaldoAtual
+
+* Sobrecarga de métodos: Podemos escrever mais de um método, mas com propriedades diferentes. 
+            
+## O que é encapsulamento
+
+    Na Orientação a Objetos o encapsulamento é a técnica que consiste de ocultar os detalhes internos de implementação de uma classe para os elementos externos. Isso é feito, normalmente, limitando o acesso à leitura e escrita de atributos, expondo para o meio externo apenas métodos. Dessa forma, as entradas e saídas são controladas por meio dos parâmetros e retorno dos métodos.
+
+    Quando encapsulamos uma informação, temos a possibilidade de controlar os valores que serão atribuídos a ela, aplicar regras de formatação e validação, torná-la apenas leitura e atualizar atributos dependentes de forma automática.
+
+    A forma mais comum de implementação do encapsulamento é utilizando os chamados “métodos acessores”, ou seja, métodos que são responsáveis pela escrita e leitura dos atributos. Esses métodos são comumente denominados GET (leitura) e SET (escrita).
+
+    * Modificadores de Acesso: Private x Public
+
+        - Private: Permite o acesso ao atributo ou ao método apenas de modo interno. 
+        - Public: Permite o acesso aos atributos e métodos de uma classe, por qualquer outra classe externa. 
+
+    * Aplicando o Encapsulamento:
+        - Quando possuímos elementos privados, podemos fornecer acesso as suas informações por meio dos métodos acessores, conhecidos como Get e Set. 
+            * Get: Permite a leitura da informação
+            * Set: Permite a alteração da informação. 
+
+            public class User
+            {
+                private string CPFUser; 
+
+                //Retorna para o solicitante o CPF do Usuário
+                public string GetCPF()
+                {
+                    return CPFUser; 
+                }
+
+                //Realiza a edição do CPF do usuário
+                //Usado para escrita
+                public void SetCPF(string CPFEdit)
+                {
+                    if (CPFEdit.Length != 11) {
+                        return "Digite um número válido!";
+                    }
+                    CPFUser = CPFedit.Text; 
+                }
+            }
+
+    Em C# podemos utilizar uma estrutura da linguagem, para construir de forma simplificada os métodos acessores (get e set)
+
+## O que é Herança
+
+    No mundo real, herança é a possibilidade de algo ou alguém receber atributos e comportamentos provenientes de um semelhante que o antecede. Por exemplo, entre animais é comum que herde características como cor do pelo e tamanho dos seus ancestrais. Já numa linha de fabricação veículos, podemos dizer que um modelo mais atual “herdou” do modelo anterior o motor, mas teve seu visual alterado.
+
+    Na Orientação a Objetos a herança é um princípio por meio do qual uma classe herda de outra seus atributos e características. A classe original é chamada de classe pai ou superclasse, enquanto a que herda é chamada de classe filha ou subclasse.
+
+    Tal como ocorre no mundo real, uma classe pode herdar certos atributos e características e mantê-los na sua forma original, mas também pode alterá-los conforme sua necessidade, bem como pode desenvolver suas próprias características.
+
+    * A herança acontece quando existe uma relação do tipo "É um"
+        * Um cachorro É UM animal
+        * Um carro É UM veículo
+
+## O que são interfaces
+
+    As interfaces são comumente definidas como “contratos” na POO, pois como tais elas definem um conjunto de regras/obrigações que devem ser seguidas pelas classes que as implementam. No caso, essas regras/obrigações são métodos que devem ser implementados.
+
+    Uma interface define apenas as assinaturas de métodos (nome, tipo de retorno e parâmetros), sem atribuir a eles um corpo. A obrigação de implementar o corpo dos métodos cabe às classes que as implementam (termo usado para dizer que uma classe “herda” de uma interface).
+
+    Outra característica importante das interfaces é que elas não possuem atributos, portanto elas são usadas quando há necessidade de padronizar os comportamentos (métodos) entre classes.
+
+    Em C# convenciona-se iniciar o nome da interface com um “I” maiúsculo, e os métodos não têm modificadores de acesso, pois são assumidos como públicos por padrão (não faz sentido ter um método privado em uma interface, uma vez que seu objetivo é que eles sejam implementados nas classes).
+
+    Tomando como base um cenário de um jogo (RPG, por exemplo), normalmente temos uma variedade de personagens para escolher, mas todos possuem um conjunto de comportamentos padronizados, como se deslocar no mapa, atacar e se defender. Apesar de serem as mesmas ações, cada personagem pode realizá-las de uma forma particular, portanto cabe aqui o uso de interfaces. Nesse caso, uma interface IPersonagem define quais são os comportamentos básicos para todo personagem no jogo. Então cabe a cada classe implementar esses métodos da sua forma.
+
+    Caso seja necessário adicionar outro tipo de personagem ao jogo, esse processo é facilitado pela existência da interface, uma vez que já se sabe quais são os métodos mínimos que essa nova classe deve possuir.
+
+    Interfaces são utilizadas amplamente na implementação de padrões de projeto e princípios mais avançados, como injeção de dependências. Portanto, compreendê-las agora lhe ajudará a entender e implementar com mais facilidade esses conceitos mais adiante em sua carreira.

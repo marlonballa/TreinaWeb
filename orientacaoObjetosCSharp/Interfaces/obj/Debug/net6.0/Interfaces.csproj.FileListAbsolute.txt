@@ -1,0 +1,5 @@
+D:\Usuario\Desktop\MARLON\TreinaWeb\orientacaoObjetosCSharp\Interfaces\obj\Debug\net6.0\Interfaces.csproj.AssemblyReference.cache
+D:\Usuario\Desktop\MARLON\TreinaWeb\orientacaoObjetosCSharp\Interfaces\obj\Debug\net6.0\Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+D:\Usuario\Desktop\MARLON\TreinaWeb\orientacaoObjetosCSharp\Interfaces\obj\Debug\net6.0\Interfaces.AssemblyInfoInputs.cache
+D:\Usuario\Desktop\MARLON\TreinaWeb\orientacaoObjetosCSharp\Interfaces\obj\Debug\net6.0\Interfaces.AssemblyInfo.cs
+D:\Usuario\Desktop\MARLON\TreinaWeb\orientacaoObjetosCSharp\Interfaces\obj\Debug\net6.0\Interfaces.csproj.CoreCompileInputs.cache

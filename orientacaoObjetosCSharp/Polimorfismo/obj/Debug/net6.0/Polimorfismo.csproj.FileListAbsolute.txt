@@ -1,0 +1,15 @@
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\orientacaoObjetosCSharp\Polimorfismo\bin\Debug\net6.0\Polimorfismo.exe
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\orientacaoObjetosCSharp\Polimorfismo\bin\Debug\net6.0\Polimorfismo.deps.json
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\orientacaoObjetosCSharp\Polimorfismo\bin\Debug\net6.0\Polimorfismo.runtimeconfig.json
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\orientacaoObjetosCSharp\Polimorfismo\bin\Debug\net6.0\Polimorfismo.dll
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\orientacaoObjetosCSharp\Polimorfismo\bin\Debug\net6.0\Polimorfismo.pdb
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\orientacaoObjetosCSharp\Polimorfismo\obj\Debug\net6.0\Polimorfismo.csproj.AssemblyReference.cache
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\orientacaoObjetosCSharp\Polimorfismo\obj\Debug\net6.0\Polimorfismo.GeneratedMSBuildEditorConfig.editorconfig
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\orientacaoObjetosCSharp\Polimorfismo\obj\Debug\net6.0\Polimorfismo.AssemblyInfoInputs.cache
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\orientacaoObjetosCSharp\Polimorfismo\obj\Debug\net6.0\Polimorfismo.AssemblyInfo.cs
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\orientacaoObjetosCSharp\Polimorfismo\obj\Debug\net6.0\Polimorfismo.csproj.CoreCompileInputs.cache
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\orientacaoObjetosCSharp\Polimorfismo\obj\Debug\net6.0\Polimorfismo.dll
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\orientacaoObjetosCSharp\Polimorfismo\obj\Debug\net6.0\refint\Polimorfismo.dll
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\orientacaoObjetosCSharp\Polimorfismo\obj\Debug\net6.0\Polimorfismo.pdb
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\orientacaoObjetosCSharp\Polimorfismo\obj\Debug\net6.0\Polimorfismo.genruntimeconfig.cache
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\orientacaoObjetosCSharp\Polimorfismo\obj\Debug\net6.0\ref\Polimorfismo.dll

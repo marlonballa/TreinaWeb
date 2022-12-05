@@ -1,0 +1,24 @@
+## Interfaces
+
+    - Neste exemplo vamos criar interfaces que definem comportamentos dos itens, dentro de um contexto. 
+        * Classificação: Colecionáveis ou Consumiveis
+            * Colecionáveis: Deve possuir o comportamento de ser adicionado ao inventário
+            * Consumível: Deve possuir o comportamento de ser consumido
+
+## Implementando uma interface
+
+    - O processo de implementação de uma interface é idêntico ao de herança de classe.
+
+    public class Espada : Item, IColecionavel
+        * Aqui estamos dizendo que a classe Espada herdará as características da classe Item e os métodos da interface IColecionavel 
+
+## Classe bastrata x Interface
+
+Quando estudamos classes abstratas e interfaces, é comum que surja a dúvida sobre quando devemos utilizar cada uma e quais implicações para o código essa escolha traz. Essa dúvida se justifica pelo fato das duas terem algumas características em comum: não representam entidades concretas (mas sim abstratas ou “contratos”); seus métodos possuem apenas assinatura, sem implementação. Porém, veremos a seguir como decidir qual é a melhor opção para cada caso.
+
+Métodos com implementação padrão
+Enquanto as interfaces definem apenas a assinatura dos métodos, as classes abstratas podem trazer uma implementação padrão deles, que pode ser herdada ou sobrescrita nas classes concretas. Ou seja, se você tem um comportamento padrão que possivelmente se aplicará às classes filhas, ele pode ser implementado na classe pai abstrata, e se for preciso, as classes filhas o sobrescrevem.
+
+## Polimorfismo com Interfaces
+
+    * Um objeto declarado como sendo de uma interface, pode assumir  a forma de qualquer uma das classes que implementam esta interface. 
