@@ -1,0 +1,33 @@
+## Conhecendo o Algoritmo de Ordenação: Selection Sort
+
+    * Percorre o vetor e seleciona o menor elemento, posicionando o elemento à esquerda. Esta ordenção faz com que no último laço a ordenação esteja completa. 
+
+
+    * 3 1 5 2 4
+
+        Primeiro laço:
+            - Assume que o primeiro item é o menor
+            3
+        Segundo laço:
+            - Compara se o segundo elemento é menor que o primeiro, se for, colocá-o a esquerda. 
+            1 3
+        Terceiro Laço:
+            - Compara se o terceiro elemento é menor que o segundo, se for, colocá-o a esquerda. 
+                * 5 < 3? = false
+            - Compara se o quarto elemento é menor que o segundo, se for, colocá-o a esquerda. 
+                * 2 < 3 ? true
+                * Armazena a informação de este é o menor e começa a usá-lo na comparação. 
+            - Compara se o elemento (2) é menor que o último, se for, colocá-o a esquerda. 
+                * 2 < 4 ? true
+                * colocá-o a esquerda.
+            12534
+        Quarto laço:
+        - Compara se o terceiro elemento é menor que o quarto, se for, colocá-o a esquerda. 
+                * 3 < 5? = true
+                * 3 < 4 ? = true
+
+            12354
+            .
+            .
+            .
+            12345

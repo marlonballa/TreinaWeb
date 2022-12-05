@@ -1,0 +1,15 @@
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\algoritmosCSharp\bin\Debug\net6.0\algoritmosCSharp.exe
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\algoritmosCSharp\bin\Debug\net6.0\algoritmosCSharp.deps.json
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\algoritmosCSharp\bin\Debug\net6.0\algoritmosCSharp.runtimeconfig.json
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\algoritmosCSharp\bin\Debug\net6.0\algoritmosCSharp.dll
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\algoritmosCSharp\bin\Debug\net6.0\algoritmosCSharp.pdb
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\algoritmosCSharp\obj\Debug\net6.0\algoritmosCSharp.csproj.AssemblyReference.cache
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\algoritmosCSharp\obj\Debug\net6.0\algoritmosCSharp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\algoritmosCSharp\obj\Debug\net6.0\algoritmosCSharp.AssemblyInfoInputs.cache
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\algoritmosCSharp\obj\Debug\net6.0\algoritmosCSharp.AssemblyInfo.cs
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\algoritmosCSharp\obj\Debug\net6.0\algoritmosCSharp.csproj.CoreCompileInputs.cache
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\algoritmosCSharp\obj\Debug\net6.0\algoritmosCSharp.dll
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\algoritmosCSharp\obj\Debug\net6.0\refint\algoritmosCSharp.dll
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\algoritmosCSharp\obj\Debug\net6.0\algoritmosCSharp.pdb
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\algoritmosCSharp\obj\Debug\net6.0\algoritmosCSharp.genruntimeconfig.cache
+D:\Usuario\Desktop\Treina Web\Desenvolvedor C#\algoritmosCSharp\obj\Debug\net6.0\ref\algoritmosCSharp.dll

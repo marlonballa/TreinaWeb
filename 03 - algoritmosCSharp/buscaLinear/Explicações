@@ -1,0 +1,8 @@
+## Algoritmo de busca Linear
+
+    - Realiza a busca sequencial dentro de um conjunto.
+    - Os algortimos de uma pilha são percorridos um a um. 
+
+    * Não é o melhor algoritmo para listas ordenadas
+    * Melhor caso: O item buscado é o primeiro
+    * Pior caso: O item buscado é o ultimo
