@@ -1,0 +1,41 @@
+## Como surgiram os bancos de dados
+
+    Surgimento dos bancos de dados
+    Os bancos de dados são um conjunto de dados que se relacionam de forma a gerar um sentido e atender uma comunidade específica. Eles surgiram no final da década de 1960, início dos anos 70. Até então, os programadores usavam o próprio sistema de arquivos do sistema operacional para armazenar os dados dos programas desenvolvidos. Os registros eram gravados em arquivos, e consultados quando necessário. Porém, esse método tinha vários pontos fracos.
+
+    Principais desvantagens do uso de arquivos:
+
+    Dificuldade no acesso aos dados.
+    Redundância.
+    Inconsistência.
+    Perda de arquivos, arquivos danificados.
+    Problemas de integridade.
+    Dentre os problemas descritos acima, um era “a pedra no caminho”: os sistemas de arquivos não permitiam o acesso simultâneo aos dados; ou seja, se um arquivo fosse aberto por certo processo, o sistema de arquivo o bloqueava e só liberava o acesso após seu fechamento. Nessa época, as redes estavam começando a florescer e havia grande necessidade de acesso concorrente (simultâneo) a um mesmo dado.
+
+    A partir dessa necessidade é que foram criados os primeiros sistemas gerenciadores de bancos de dados, também conhecidos como SGBD. São softwares formados por um conjunto de funcionalidades, que visam suprir as necessidades básicas de um banco de dados, como: definição, recuperação e alteração de dados. Tal criação facilitou muito a vida dos programadores, que antes tinham de se preocupar com a forma como os dados eram gravados, fazer todo o mecanismo de conexão e métodos de pesquisa, entre outras coisas.
+
+    Com o surgimento dos SGBD’s, os programadores passaram a se preocupar apenas em enviar e receber os dados, enquanto o SGBD faz o trabalho pesado. Isso diminuiu o tempo de desenvolvimento de software, pois os programadores agora se preocupam apenas com o projeto do banco de dados, uma vez que o SGBD contém todas as funcionalidades necessárias prontas.
+
+    Principais vantagens dos bancos de dados em relação aos arquivos:
+
+    Controle de redundância.
+    Integridade referencial.
+    Controle de acesso concorrente (simultâneo).
+    Redução no tempo de desenvolvimento.
+    Ferramentas de backup e recovery.
+
+## Centralização de Dados
+
+    As empresas sempre contaram com sistemas para facilitar os processos no dia a dia, mesmo antes da chegada da tecnologia da informação. Os sistemas antigos eram lentos e imprecisos, pois funcionavam de modo manual, com registros gravados em papel, um dos principais problemas era – e ainda continua sendo – a descentralização dos dados da organização.
+
+    De forma gradual, os sistemas vêm sendo informatizados, mas os problemas de descentralização dos dados continuarão a existir porque os bancos de dados foram criados de forma independente uns dos outros, e esse tipo de migração pode gerar vários problemas nos dados de uma empresa.
+
+    Vamos entender por que. Suponha uma empresa que funcione do seguinte modo:
+
+    Tem duas filiais de vendas, uma em Curitiba e outra no Rio de Janeiro, e a matriz onde as notas são faturadas e enviadas para os clientes. Por falta de conectividade, os desenvolvedores usam banco de dados locais em cada uma das unidades.
+
+    Essa descentralização de dados pode gerar vários problemas à empresa. Por exemplo, para ter o cadastro de um mesmo cliente em todas as unidades, ele deverá ser cadastrado no sistema de São Paulo, Rio e Curitiba, individualmente, gerando o que é chamado de redundância de dados (dados repetidos).
+
+    É possível que, ao cadastrar o mesmo cliente já cadastrado, o funcionário do Rio de Janeiro digite o CNPJ da empresa errado, gerando assim o que é chamado de inconsistência de dados (dados diferentes).
+
+    Com a centralização do banco de dados, consequentemente há o aumento na complexidade do banco. No caso do exemplo acima, seria preciso ter um cadastro que atendesse as necessidades das duas filiais e da matriz. Mesmo assim, por evitar problemas mais graves, ainda valeria à pena.

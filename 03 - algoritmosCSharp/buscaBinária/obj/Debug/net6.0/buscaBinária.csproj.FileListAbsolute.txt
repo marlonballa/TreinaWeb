@@ -1,0 +1,15 @@
+D:\Usuario\Desktop\MARLON\TreinaWeb\03 - algoritmosCSharp\buscaBinária\bin\Debug\net6.0\buscaBinária.exe
+D:\Usuario\Desktop\MARLON\TreinaWeb\03 - algoritmosCSharp\buscaBinária\bin\Debug\net6.0\buscaBinária.deps.json
+D:\Usuario\Desktop\MARLON\TreinaWeb\03 - algoritmosCSharp\buscaBinária\bin\Debug\net6.0\buscaBinária.runtimeconfig.json
+D:\Usuario\Desktop\MARLON\TreinaWeb\03 - algoritmosCSharp\buscaBinária\bin\Debug\net6.0\buscaBinária.dll
+D:\Usuario\Desktop\MARLON\TreinaWeb\03 - algoritmosCSharp\buscaBinária\bin\Debug\net6.0\buscaBinária.pdb
+D:\Usuario\Desktop\MARLON\TreinaWeb\03 - algoritmosCSharp\buscaBinária\obj\Debug\net6.0\buscaBinária.csproj.AssemblyReference.cache
+D:\Usuario\Desktop\MARLON\TreinaWeb\03 - algoritmosCSharp\buscaBinária\obj\Debug\net6.0\buscaBinária.GeneratedMSBuildEditorConfig.editorconfig
+D:\Usuario\Desktop\MARLON\TreinaWeb\03 - algoritmosCSharp\buscaBinária\obj\Debug\net6.0\buscaBinária.AssemblyInfoInputs.cache
+D:\Usuario\Desktop\MARLON\TreinaWeb\03 - algoritmosCSharp\buscaBinária\obj\Debug\net6.0\buscaBinária.AssemblyInfo.cs
+D:\Usuario\Desktop\MARLON\TreinaWeb\03 - algoritmosCSharp\buscaBinária\obj\Debug\net6.0\buscaBinária.csproj.CoreCompileInputs.cache
+D:\Usuario\Desktop\MARLON\TreinaWeb\03 - algoritmosCSharp\buscaBinária\obj\Debug\net6.0\buscaBinária.dll
+D:\Usuario\Desktop\MARLON\TreinaWeb\03 - algoritmosCSharp\buscaBinária\obj\Debug\net6.0\refint\buscaBinária.dll
+D:\Usuario\Desktop\MARLON\TreinaWeb\03 - algoritmosCSharp\buscaBinária\obj\Debug\net6.0\buscaBinária.pdb
+D:\Usuario\Desktop\MARLON\TreinaWeb\03 - algoritmosCSharp\buscaBinária\obj\Debug\net6.0\buscaBinária.genruntimeconfig.cache
+D:\Usuario\Desktop\MARLON\TreinaWeb\03 - algoritmosCSharp\buscaBinária\obj\Debug\net6.0\ref\buscaBinária.dll
