@@ -39,3 +39,78 @@
     É possível que, ao cadastrar o mesmo cliente já cadastrado, o funcionário do Rio de Janeiro digite o CNPJ da empresa errado, gerando assim o que é chamado de inconsistência de dados (dados diferentes).
 
     Com a centralização do banco de dados, consequentemente há o aumento na complexidade do banco. No caso do exemplo acima, seria preciso ter um cadastro que atendesse as necessidades das duas filiais e da matriz. Mesmo assim, por evitar problemas mais graves, ainda valeria à pena.
+
+    ## Modelo Conceitual
+
+    O modelo conceitual é o mais abstrato dos modelos, como mostra o diagrama no tópico anterior. Ele está mais distante do Hardware do computador e não depende do SGBD que vai ser usado no projeto, e muito menos da tecnologia que usará.
+
+    O modelo conceitual é usado para gerar o modelo lógico, independente do tipo de SGBD. O mesmo modelo conceitual, que você desenvolveu para um banco de dados relacional, pode ser usado em um banco de dados hierárquico.
+
+    Existem alguns tipos de técnicas de modelagem para o modelo conceitual. Neste curso será usado o ER – Entidade Relacionamento, que é largamente utilizado no mercado porque apresenta facilidades no mapeamento para o modelo lógico relacional, que também é o mais usado.
+
+    Para representar o ER será usado um diagrama chamado Diagrama Entidade Relacionamento – DER. Esse diagrama é para o banco de dados mais ou menos o que o fluxograma é para quem está aprendendo lógica de programação, pois a partir dele, e usando técnicas de mapeamento, você é capaz de gerar os códigos SQL do seu banco de dados. A principal diferença entre ele e o fluxograma é que programadores experientes não precisam desenvolver fluxogramas para programar. Já o DER é parte essencial de um banco de dados e deve ser desenvolvido sempre, mesmo por DA’s - Data Administrator experientes, pois ele faz parte da documentação do projeto.
+
+    Os DA’s são profissionais pouco conhecidos no mercado. Eles são responsáveis por toda a definição de dados de uma empresa. O profissional dessa área deve ter características tanto técnicas, para a modelagem correta de um banco de dados, como de negócios para entender corretamente a estrutura de processos da empresa.
+
+## Modelo Lógico
+
+    O modelo lógico é o nível de abstração intermediário entre o nível conceitual e o físico. Ele está fortemente ligado ao tipo de SGBD usado no projeto. Neste curso será abordado o modelo lógico para sistemas gerenciadores de banco de dados relacionais.
+
+    O modelo relacional é o mais usado no mercado. Nesse modelo os dados são gravados em tabelas, que possuem colunas e chaves, entre outras coisas que serão explicadas adiante no curso.
+
+## Modelo Físico
+    Como o próprio nome sugere, o modelo físico é o que está mais perto do hardware do computador. Ele se ocupa em como os dados serão gravados no disco e como o banco de dados consultará os dados, entre outras coisas.
+
+    Esse modelo geralmente é usado por profissionais que são responsáveis por otimizar o desempenho do banco. Tal processo também é chamado de tuning, e os ajustes acontecem mesmo depois de o banco de dados estar totalmente desenvolvido. Os profissionais dessa área precisam ter alto nível de conhecimento técnico e são muito valorizados no mercado de trabalho.
+
+## O Conceito de Entidade Relacionamento
+
+    * Técnica para a construção de modelos conceituais
+    * modelo altamente podereoso
+    * Técnica de modelagem amplamente utilizada
+    * Diversos softwares para a criação de modelos
+    * Diversos tipos de notações
+    * Fácil tradução para o modelo relacional
+    * Criada em 1976, por Peter Chen
+    * A abordagem Entidade Relacionamento (ER) é representada graficamente pelo Diagrama Entidade Relacionamento (DER). 
+        * Quando criamos um DER, dizemos que ele é um Modelo Entidade Relacionamento (MER), pois reproduz uma situação descrita. 
+
+## DER (Diagrama Entidade Relacionamento)
+    * O DER possui muitas notações, com pequenas diferenças
+        - Estas alterações foram realizadas por acadêmicos e pesquisadores 
+        - Alterações na implementação de softwares e modelagem
+
+    * A notação mais comum é de Carlos Alberto Heuser, apresentada em 2001.
+        - Entidade
+        - Relacionamento
+        - Atributos
+        - Generalização/Especialização
+        - Entidade Associativa
+
+    * Outras abordagens:
+        * Niam/ORM 
+        * UML
+
+## Entidade
+
+        * Estudo de caso: Livraria
+        * Entidades:
+            Clientes: NomeCliente, EndereçoCliente, TelefoneCliente, CPFCliente, LivrosComprados, TipoPessoa
+            Compra: DataCompra
+            Livros: NomeLivro, , Assunto, Editora, ISBN 
+            Autor: NomeAutorLivro
+            TipoLivro:
+            Estoque:
+            Editoras: CódigoEditora, EndereçoEditora, TelefoneEditora, NomeGerenteEditora
+
+        * Estudo de Caso: Hospital:
+        * Entidades:
+            Alas: IdAla, NomeAla
+            Enfermeira: CRE, ÉChefe, NomeEnfermeira
+            PlanoDeSaúde: IdPlanoSaude, NomePlanoSaude, TelefonePlanosaude
+            Médicos: CRM, NomeMedico, EspecialidadeMedico
+            Paciente: NomePaciente, CPFPaciente
+            Atendimento: NomeMédico, NomePaciente, DataAtendimento, HoraAtendimento.
+            Hospital: CNPJ,
+
+            
