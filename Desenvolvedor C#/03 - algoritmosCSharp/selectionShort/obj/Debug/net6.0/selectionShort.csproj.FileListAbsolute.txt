@@ -13,3 +13,18 @@ D:\Usuario\Desktop\MARLON\TreinaWeb\03 - algoritmosCSharp\selectionShort\obj\Deb
 D:\Usuario\Desktop\MARLON\TreinaWeb\03 - algoritmosCSharp\selectionShort\obj\Debug\net6.0\selectionShort.pdb
 D:\Usuario\Desktop\MARLON\TreinaWeb\03 - algoritmosCSharp\selectionShort\obj\Debug\net6.0\selectionShort.genruntimeconfig.cache
 D:\Usuario\Desktop\MARLON\TreinaWeb\03 - algoritmosCSharp\selectionShort\obj\Debug\net6.0\ref\selectionShort.dll
+D:\Usuario\Desktop\MARLON\TreinaWeb\Desenvolvedor C#\03 - algoritmosCSharp\selectionShort\bin\Debug\net6.0\selectionShort.exe
+D:\Usuario\Desktop\MARLON\TreinaWeb\Desenvolvedor C#\03 - algoritmosCSharp\selectionShort\bin\Debug\net6.0\selectionShort.deps.json
+D:\Usuario\Desktop\MARLON\TreinaWeb\Desenvolvedor C#\03 - algoritmosCSharp\selectionShort\bin\Debug\net6.0\selectionShort.runtimeconfig.json
+D:\Usuario\Desktop\MARLON\TreinaWeb\Desenvolvedor C#\03 - algoritmosCSharp\selectionShort\bin\Debug\net6.0\selectionShort.dll
+D:\Usuario\Desktop\MARLON\TreinaWeb\Desenvolvedor C#\03 - algoritmosCSharp\selectionShort\bin\Debug\net6.0\selectionShort.pdb
+D:\Usuario\Desktop\MARLON\TreinaWeb\Desenvolvedor C#\03 - algoritmosCSharp\selectionShort\obj\Debug\net6.0\selectionShort.csproj.AssemblyReference.cache
+D:\Usuario\Desktop\MARLON\TreinaWeb\Desenvolvedor C#\03 - algoritmosCSharp\selectionShort\obj\Debug\net6.0\selectionShort.GeneratedMSBuildEditorConfig.editorconfig
+D:\Usuario\Desktop\MARLON\TreinaWeb\Desenvolvedor C#\03 - algoritmosCSharp\selectionShort\obj\Debug\net6.0\selectionShort.AssemblyInfoInputs.cache
+D:\Usuario\Desktop\MARLON\TreinaWeb\Desenvolvedor C#\03 - algoritmosCSharp\selectionShort\obj\Debug\net6.0\selectionShort.AssemblyInfo.cs
+D:\Usuario\Desktop\MARLON\TreinaWeb\Desenvolvedor C#\03 - algoritmosCSharp\selectionShort\obj\Debug\net6.0\selectionShort.csproj.CoreCompileInputs.cache
+D:\Usuario\Desktop\MARLON\TreinaWeb\Desenvolvedor C#\03 - algoritmosCSharp\selectionShort\obj\Debug\net6.0\selectionShort.dll
+D:\Usuario\Desktop\MARLON\TreinaWeb\Desenvolvedor C#\03 - algoritmosCSharp\selectionShort\obj\Debug\net6.0\refint\selectionShort.dll
+D:\Usuario\Desktop\MARLON\TreinaWeb\Desenvolvedor C#\03 - algoritmosCSharp\selectionShort\obj\Debug\net6.0\selectionShort.pdb
+D:\Usuario\Desktop\MARLON\TreinaWeb\Desenvolvedor C#\03 - algoritmosCSharp\selectionShort\obj\Debug\net6.0\selectionShort.genruntimeconfig.cache
+D:\Usuario\Desktop\MARLON\TreinaWeb\Desenvolvedor C#\03 - algoritmosCSharp\selectionShort\obj\Debug\net6.0\ref\selectionShort.dll

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Usuario\\Desktop\\MARLON\\TreinaWeb\\03 - algoritmosCSharp\\selectionShort\\selectionShort.csproj",
+      "projectUniqueName": "D:\\Usuario\\Desktop\\MARLON\\TreinaWeb\\Desenvolvedor C#\\03 - algoritmosCSharp\\selectionShort\\selectionShort.csproj",
       "projectName": "selectionShort",
-      "projectPath": "D:\\Usuario\\Desktop\\MARLON\\TreinaWeb\\03 - algoritmosCSharp\\selectionShort\\selectionShort.csproj",
+      "projectPath": "D:\\Usuario\\Desktop\\MARLON\\TreinaWeb\\Desenvolvedor C#\\03 - algoritmosCSharp\\selectionShort\\selectionShort.csproj",
       "packagesPath": "C:\\Users\\PC 07\\.nuget\\packages\\",
-      "outputPath": "D:\\Usuario\\Desktop\\MARLON\\TreinaWeb\\03 - algoritmosCSharp\\selectionShort\\obj\\",
+      "outputPath": "D:\\Usuario\\Desktop\\MARLON\\TreinaWeb\\Desenvolvedor C#\\03 - algoritmosCSharp\\selectionShort\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
