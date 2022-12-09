@@ -113,4 +113,134 @@
             Atendimento: NomeMédico, NomePaciente, DataAtendimento, HoraAtendimento.
             Hospital: CNPJ,
 
-            
+## Relações
+
+    * O que são relacões?
+
+    Um relacionamento é uma associação entre ocorrências de entidades. Os relacionamentos são usados para manter o histórico das associações mantidas entre a ocorrência de uma entidade com outra ocorrência. Por exemplo, suponha que você queira saber quais os funcionários que trabalham em determinado projeto:
+    
+    - Funcionario armazena os objetos do tipo funcionário.
+    - Projeto armazena os objetos do tipo projeto.
+    - Trabalha armazena a relação entre os objetos do tipo funcionário e projeto.
+
+    A função do relacionamento Trabalha é guardar os funcionários que trabalham em determinado projeto, como mostra o exemplo acima:
+
+    - O funcionário 7 trabalha no projeto 1.
+    - O funcionário 3 trabalha no projeto 4.
+    - O funcionário 4 trabalha no projeto 3.
+
+    Note que existem ocorrências de funcionarios que não trabalham em nenhum projeto: f1, f2, f5 e f6; e também existe o projeto p2 que não tem funcionário. Não há problema nisso.
+
+    Ao abordar entidade, foi mostrado um exemplo sobre ocorrência de entidade, lembrando que ocorrência é um registro único da entidade. Os relacionamentos também possuem ocorrência de relacionamento.
+
+    O par f7- p1 é uma ocorrência de relacionamento. Como mostra a imagem acima, f7 é uma ocorrência de funcionario e p1 é de projeto.
+
+    Os relacionamentos geralmente representam a ação de uma entidade sobre outra. Por esse motivo, o nome dos relacionamentos preferencialmente deve ser verbo.
+
+## Como Indentificar Relacionamentos entre Entidades
+
+    Cliente COMPRA Livros
+
+## Cardinalidade
+
+    Os relacionamentos no Modelo ER (entidade relacionamento) ocorrem sempre com ocorrências das entidades. A cardinalidade tem como principal objetivo dizer ao modelo com quantas ocorrências da outra entidade, uma única ocorrência daquela entidade pode se relacionar.
+
+    No Diagrama entidade relacionamento as cardinalidades são representadas por dois números, que ficam ao lado da entidade, sendo a primeira cardinalidade mínima e a segunda cardinalidade máxima.
+
+    ## Cardinalidade máxima
+    
+    No DER existem as cardinalidades mínimas e máximas. A cardinalidade máxima, como o próprio nome indica, tem o objetivo de mostrar o máximo que uma ocorrência da entidade X pode se relacionar com a da entidade Y.
+
+    * Relacionamento 1 para 1
+
+        Aproveitando o exemplo usado até agora, funcionário projeto. 
+        No caso acima, está indicado que um funcionário pode participar de, no máximo, um projeto; e um projeto pode ter, no máximo, um funcionário.
+        Nessa cardinalidade, um projeto não pode estar associado a mais de um funcionário, assim como um funcionário não pode estar em mais de um projeto.
+    
+    * Relacionamento 1 para N
+
+        Nesse exemplo está indicado que um funcionário pode trabalhar em, no máximo, um projeto; e que em um projeto podem trabalhar, no máximo, dez funcionários.
+
+        Parece estranho, mas no DER a cardinalidade de um elemento fica no lado oposto dele. Veja:
+
+        Cada funcionário só pode trabalhar em um único projeto, mas um projeto pode ter vários funcionários. Lembrando que não existe problema se, em um projeto, trabalhar apenas um funcionário.
+
+    * Relacionamento N para N
+
+        Levando em conta a cardinalidade vista anteriormente 1 para N, esse gráfico estaria totalmente errado, pois o funcionário f3 trabalha no projeto p1 e ao mesmo tempo no p4. Segundo o diagrama, um funcionário poderia trabalhar em, no máximo, 1 projeto. Nessa parte entra a cardinalidade máxima N para N.
+
+        Existem situações onde é necessário que a cardinalidade máxima de ambas as partes seja do tipo N. Veja o exemplo:
+
+        A cardinalidade é muito importante para o modelo de dados. Você aprenderá no andamento do curso, que ao transformar do modelo conceitual para o modelo lógico, se houver problemas nas cardinalidades, o modelo lógico poderá sair diferente do que se queria representar no modelo conceitual.
+
+    * Exemplos de cardinalidade máxima
+
+        Um produto pode ter vários pedidos e um pedido pode ter vários produtos.
+
+## Relacionamento Opícional 
+
+    Os relacionamentos opcionais são indicados pela cardinalidade mínima 0. Nesse tipo de relacionamento podem existir ocorrências de entidade que não se relacionam com nenhuma outra ocorrência dentro daquele relacionamento.
+
+        * Um projeto pode não ter nenhum funcionário trabalhando e um funcionário pode não trabalhar em nenhum projeto. 
+    
+## Relacionamento Obrigatório
+
+    O relacionamento obrigatório é representado pela cardinalidade mínima 1. Nesse tipo de relacionamento a entidade que for representada com cardinalidade 1 deve, obrigatoriamente, ter todas as ocorrências relacionadas.
+
+    * Todo projeto deve ter pelo menos um funcionário trabalhando nele (Obrigatório de um lado - projeto)
+    * Todo funcionário deve trabalhar em pelo menos um projeto e todo projeto deve ter um funcionário trabalhando nele (obrigatório dos dois lados)
+
+## Relacionamento ternário
+
+    No DER (diagrama entidade relacionamento) podem existir relacionamentos com grau maior que dois. Esses relacionamentos podem ser ternários, quaternários e etc.
+
+    Em um relacionamento binário as cardinalidades estão sempre ligadas ao quanto uma ocorrência de entidade pode se relacionar com a ocorrência da outra entidade. Já no relacionamento ternário, um par de ocorrências é que está relacionada à outra entidade.
+
+    Exemplo: Em um relacionamento chamado Locação, há as entidades Projeto, Funcionário e Função. Você deve pensar do seguinte modo: “um par Funcionário Função pode estar alocado em quantos projetos?”.
+
+## Autorrelacionamento
+
+    Existem relacionamentos entre duas entidades diferentes (binários); existem relacionamentos entre três entidades (ternários); e existem também relacionamentos entre ocorrências da mesma entidade, chamados autorrelacionamento, ou relacionamento recursivo, como trazem algumas bibliografias.
+
+    Uma ocorrência da entidade exerce uma ação sobre outra ocorrência da mesma entidade.
+
+    Um exemplo usando casamento pode ser meio traumático, para alguns. Porém, para fins didáticos, ele atende perfeitamente. Uma pessoa pode ser casada ou solteira. Então, a cardinalidade mínima deve ser opcional. Por outro lado, uma pessoa não pode ser casada com duas pessoas ao mesmo tempo – pelo menos é isso que está previsto em lei – então, a cardinalidade máxima será um.
+
+    Note que, no autorrelacionamento, uma ocorrência de entidade exerce uma ação sobre outra ocorrência da mesma entidade. No caso do exemplo, um é marido e a outra, esposa.
+
+## Atributos Básicos
+
+    Até o momento, sempre que foi falado em ocorrência de entidade foi pensado em um elemento com características próprias, que pode ou não ser diferente das demais ocorrências. Mas, o que torna uma ocorrência de entidade diferente das demais da mesma entidade?
+
+    O que torna uma ocorrência diferente das demais são os atributos. Eles são dados relacionados com aquela ocorrência específica no diagrama entidade relacionamento. Os atributos são representados por pequenos círculos.
+
+    Um cliente possui codigo, nome, tel, end e tipo. Ao tratar das entidades, no começo do curso, foi dado um exemplo de ocorrência de entidade. Observe como agora ele faz mais sentido:
+
+## Atributos monovalorados
+
+    Assim como nos relacionamentos existem cardinalidade, nos atributos elas também existem. O objetivo é dizer quantos valores daquele atributo podem estar em uma ocorrência da entidade ou relacionamento.
+
+    * Monovalorado opcional
+
+    Veja o exemplo de atributo monovalorado opcional, cardinalidade (0,1):
+
+
+    * Monovalorado obrigatório
+
+    Quando não existe cardinalidade explícita ao lado do atributo, automaticamente entende-se que a cardinalidade dele é (1,1); ou seja, o atributo é monovalorado e obrigatório.
+    Como a maioria dos atributos mostrados no modelo entidade relacionamento são do tipo monovalorado obrigatório (Cardinalidade (1,1)), se fosse preciso exibir a cardinalidade deles, isso tornaria o diagrama visualmente mais poluído.
+
+## Atributo Multivalorado
+    
+    Assim como os relacionamentos têm cardinalidade N, indicando que uma ocorrência pode se relacionar com várias outras ocorrências, os atributos também possuem a cardinalidade N para indicar que eles podem receber vários valores daquele atributo. Veja um exemplo de atributo multivalorado opcional:
+
+    Uma ocorrência da entidade Contato pode ter no mínimo 0 telefone e, no máximo, N. Apesar de ser muito difícil, hoje em dia, uma pessoa não ter telefone, pode acontecer. Assim como existem pessoas que possuem vários números de telefone.
+
+## Atributo multivalorado obrigatório
+
+    Além dos atributos multivalorados opcionais, existem os multivalorados obrigatórios. Veja:
+
+    No caso do cadastro de um site, o usuário obrigatoriamente deve possuir, no mínimo, um e-mail; e, caso queira, pode cadastrar mais de um e-mail para contato.
+
+    Assim como na área da programação, existe uma infinidade de regras de bons costumes como: manter a formatação do código e manter o padrão dos nomes das variáveis, classe e etc. No DER também existem os bons costumes. Assim como os relacionamentos ternários não são muito utilizados devido a alguns problemas, os atributos multivalorados também enfrentam um grande problema que os tornam questão de mau costume. Ao transformar o modelo do exemplo para relacional, na hora de implementar no banco, será preciso que ele tenha suporte para campos multivalorados ou array. Mas o grande problema é que alguns não têm essa funcionalidade e outros até têm, mas são difíceis de trabalhar. Então, ao invés de criar um atributo multivalorado, você deverá usar uma nova tabela.
+
