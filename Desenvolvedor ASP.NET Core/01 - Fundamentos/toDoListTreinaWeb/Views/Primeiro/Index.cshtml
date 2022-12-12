@@ -1,7 +1,21 @@
+@{
+    //Realizando a conversão
+    //var todo = ViewData["todo"] as Todo;
+
+    var todo = ViewBag.Todo;
+}
+
+
 <style>
-    h2 {
+    h2, h6 {
         text-align: center;
     }
 </style>
+
 <h1>Esta é a minha primeira View, utilizando o APS.NET Core! </h1>
 <h2>Desenvolvida em Dezembro de 2022</h2>
+<!-- Quando vamos utilizar dados complexos, como um objeto, por exemplo. Devemos realizar a conversão deste tipo, para que o Razor consiga entender e renderizar o objeto (A conversão está no começo da página para permitir que ela possua escopo global-->
+<h6>
+    @todo?.Title
+</h6>
+<h6>@todo?.Description</h6>

@@ -244,3 +244,45 @@
 
     Assim como na área da programação, existe uma infinidade de regras de bons costumes como: manter a formatação do código e manter o padrão dos nomes das variáveis, classe e etc. No DER também existem os bons costumes. Assim como os relacionamentos ternários não são muito utilizados devido a alguns problemas, os atributos multivalorados também enfrentam um grande problema que os tornam questão de mau costume. Ao transformar o modelo do exemplo para relacional, na hora de implementar no banco, será preciso que ele tenha suporte para campos multivalorados ou array. Mas o grande problema é que alguns não têm essa funcionalidade e outros até têm, mas são difíceis de trabalhar. Então, ao invés de criar um atributo multivalorado, você deverá usar uma nova tabela.
 
+## Atributo simples VS composto
+
+    * Atributo Simples
+
+    Todos os atributos mostrados até agora são considerados simples e também conhecidos como atômicos (do grego átomo, que significa indivisível). 
+    Pela lógica não faz sentido dividir o atributo login em duas partes. Por exemplo, para que dividir o login: Maria_2010 em duas partes? Não há necessidade alguma. A mesma coisa para os atributos senha e frase de segurança.
+
+## Atributo Composto
+
+    Agora pense no atributo endereço. O que compõe esse atributo?
+        logradouro, número, complemento
+    Pode-se criar um atributo composto Endereço, que contenha todos esses atributos. 
+    Segundo a definição, um atributo composto é aquele que pode ser divido em partes menores.
+
+    O atributo nome_completo foi separado em nome e sobrenome. O atributo end_completo foi separado em estado, cidade e bairro. O grande detalhe está no atributo end_rua, pois se trata de um atributo composto dentro de outro. Você pode criar quantos atributos compostos alinhados quiser, mas lembre-se que se deve manter os diagramas sempre os mais limpos possíveis. É desnecessário criar vários atributos se eles podem ser representados apenas no modelo relacional.
+
+## Modelo equivalente
+
+    No modelo entidade relacionamento quase sempre existem vários jeitos de representar um mesmo modelo, o que é chamado de equivalente. No caso dos atributos compostos não é diferente: pode ser feito um modelo equivalente colocando-se todos os atributos simples na própria entidade.
+
+## Atributos de relacionamento
+
+Os atributos são propriedades de uma ocorrência de entidade ou relacionamento, cujo objetivo é tornar a ocorrência particular, com características próprias. Até agora, todos os atributos demonstrados estavam ligados às entidades. Mas existem casos onde um atributo não pode ser de responsabilidade de nenhuma entidade.
+
+Primeiro relembre como ler um atributo:
+
+Um paciente pode estar em, no mínimo, 0 consultas; e, no máximo, em N consultas.
+Um médico pode realizar, no mínimo, 0 consultas; e, no máximo, N consultas.
+Até aqui tudo perfeito. Dispõe-se das informações do paciente e das informações do médico. Mas o histórico de data e hora das consultas deve ser salvo no banco de dados. Onde colocar esses atributos? Primeiro, os atributos Data e Hora foram inseridos em Paciente.
+
+Com os atributos data e hora na entidade Paciente, não é possível mais considerar as cardinalidades expressas do diagrama, pois como a data e hora da consulta estão fixadas no paciente, ele só poderá participar de uma consulta. Quando ele for realizar outra consulta você deverá apagar o campo data e hora e gravar novamente, perdendo assim o histórico da primeira consulta.
+
+Se tirar os atributos da entidade Paciente e colocá-los na entidade Médico, ocorrerá o mesmo problema. O único modo de resolver a questão do diagrama acima, sem criar uma nova entidade chamada consulta, é fixar os atributos data e hora diretamente no relacionamento consulta.
+
+Agora sim, um médico pode ter consultas marcadas em horários diferentes com vários pacientes, assim como um paciente pode ter várias consultas marcadas com diferentes médicos, todas em horários distintos.
+
+
+
+
+
+
+

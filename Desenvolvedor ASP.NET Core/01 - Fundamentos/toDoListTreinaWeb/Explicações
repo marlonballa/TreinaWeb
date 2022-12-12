@@ -67,7 +67,28 @@
     * Arquivo: _ViewImports
         - Responsável por realizar a importação de classes e interfaces desenvolvidas na aplicação, ou externas. 
 
-    * Tag Helpers adicionam funcionalidades a aplicação. 
+    * Tag Helpers adicionam funcionalidades a aplicação.
+
+    * Nosso código Razor sempre começa com um @
 
 ## Enviando informações do Controller para a View
 
+    * View Date 
+        - Dicionário acessível através de chave e valor
+
+        @ViewData["informacaoBuscada"]
+
+        Caso aconteça a tentiva de acessar algum dado que não exista, o Razor não nos mostra nada, pois entende que está renderizando algo que é nulo. 
+
+## Enviando dados do Controller para a View, utilizando o ViewModel
+
+    * ViewModel é um padrão de projeto que tem como objetivo separar dados de visualização da View das classes de domínio da aplicação (Classes de Modelo). 
+        - Modelo: Clientes
+        - Modelo: Cursos
+
+    * O padrão ViewModel:
+        - Para não termos que enviar dois dados de Models diferentes, por meio do ViewData, ViewBag, podemos criar uma classe nova que contém as duas informações ao mesmo tempo e as envia de uma só vez para a View. 
+
+    - Utlizar ViewModel quando for trabalhar com dados mais complexos, na aplicação.
+    - Utilizar informações menores: ViewData/ViewBag
+    - Utilizar quando precisa passar informações entre diferentes Actions/Controllers: TempData. 
