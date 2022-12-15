@@ -48,7 +48,7 @@ public class PrimeiroController : Controller
 
         var todo = new Todo { 
             Title = "Desenvolvendo aplicações com Razor",
-            Description = "Está é minha primeira aplicação APS.NET Core, com Razor" 
+            
             };
 
         //ViewData["todo"] = todo;
@@ -77,7 +77,7 @@ public class PrimeiroController : Controller
     {
          var todo = new Todo { 
             Title = "Desenvolvendo aplicações com Razor",
-            Description = "Está é minha primeira aplicação APS.NET Core, com Razor" 
+            
             };
 
         var viewModel = new DetailsTodosViewModels

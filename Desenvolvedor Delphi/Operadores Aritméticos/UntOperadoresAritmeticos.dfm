@@ -1,0 +1,142 @@
+object frmOperadoresAritmeticos: TfrmOperadoresAritmeticos
+  Left = 0
+  Top = 0
+  Caption = 'Operadores Aritm'#233'ticos '
+  ClientHeight = 156
+  ClientWidth = 303
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 8
+    Top = 55
+    Width = 86
+    Height = 13
+    Caption = 'Segundo N'#250'mero:'
+  end
+  object Label2: TLabel
+    Left = 8
+    Top = 8
+    Width = 82
+    Height = 13
+    Caption = 'Primeiro N'#250'mero:'
+  end
+  object Label3: TLabel
+    Left = 8
+    Top = 102
+    Width = 52
+    Height = 13
+    Caption = 'Resultado:'
+  end
+  object spedtResult: TSpinEdit
+    Left = 8
+    Top = 121
+    Width = 121
+    Height = 22
+    Enabled = False
+    MaxValue = 0
+    MinValue = 0
+    TabOrder = 0
+    Value = 0
+  end
+  object spedtSecondNumber: TSpinEdit
+    Left = 8
+    Top = 74
+    Width = 121
+    Height = 22
+    Enabled = False
+    MaxValue = 0
+    MinValue = 0
+    TabOrder = 1
+    Value = 0
+  end
+  object spedtFirstNumber: TSpinEdit
+    Left = 8
+    Top = 27
+    Width = 121
+    Height = 22
+    MaxValue = 0
+    MinValue = 0
+    TabOrder = 2
+    Value = 0
+  end
+  object btnSomar: TButton
+    Left = 135
+    Top = 24
+    Width = 75
+    Height = 25
+    Caption = '+'
+    TabOrder = 3
+    OnClick = btnSomarClick
+  end
+  object btnDivisaoReal: TButton
+    Left = 216
+    Top = 55
+    Width = 75
+    Height = 25
+    Caption = #247
+    TabOrder = 4
+    OnClick = btnDivisaoRealClick
+  end
+  object btnResult: TButton
+    Left = 135
+    Top = 117
+    Width = 112
+    Height = 25
+    Caption = '='
+    TabOrder = 5
+    OnClick = btnResultClick
+  end
+  object btnSubtrair: TButton
+    Left = 216
+    Top = 24
+    Width = 75
+    Height = 25
+    Caption = '-'
+    TabOrder = 6
+    OnClick = btnSubtrairClick
+  end
+  object btnMultiplicar: TButton
+    Left = 135
+    Top = 55
+    Width = 75
+    Height = 25
+    Caption = 'X'
+    TabOrder = 7
+    OnClick = btnMultiplicarClick
+  end
+  object Button6: TButton
+    Left = 216
+    Top = 86
+    Width = 75
+    Height = 25
+    Caption = 'M'#243'dulo'
+    TabOrder = 8
+    OnClick = Button6Click
+  end
+  object btnDivisaoInteira: TButton
+    Left = 135
+    Top = 86
+    Width = 75
+    Height = 25
+    Caption = #247' int'
+    TabOrder = 9
+    OnClick = btnDivisaoInteiraClick
+  end
+  object btnReset: TButton
+    Left = 247
+    Top = 117
+    Width = 44
+    Height = 25
+    Caption = 'C'
+    TabOrder = 10
+    OnClick = btnResetClick
+  end
+end

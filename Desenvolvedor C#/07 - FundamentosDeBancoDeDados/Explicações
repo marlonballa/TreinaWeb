@@ -281,6 +281,48 @@ Se tirar os atributos da entidade Paciente e colocá-los na entidade Médico, oc
 Agora sim, um médico pode ter consultas marcadas em horários diferentes com vários pacientes, assim como um paciente pode ter várias consultas marcadas com diferentes médicos, todas em horários distintos.
 
 
+## Atributo Identificador
+
+    Os atributos, de forma geral, são o que tornam as ocorrências de entidade particulares, com características próprias. Mas existem atributos com valores iguais para mais de uma ocorrência.
+
+    É possível ter uma ocorrência com o valor do atributo nome: Maria pereira e idade: 23 anos, e nada impede ter outra ocorrência com os mesmos valores de atributo. Mas isso gera um problema, pois na hora de fazer uma pesquisa no banco de dados ele retornará vários registros, ao invés daquilo realmente se deseja. Ou mesmo na hora de apagar um registro, o SGBD não terá como diferenciar os registros e apagará todos que sejam iguais. Para resolver esse problema você deve colocar, em toda entidade que criar, um atributo identificador que terá o valor diferente das demais ocorrências daquela entidade.
+
+    O atributo identificador deve ser monovalorado obrigatório, atômico e único. Ele é sempre representado por uma bolinha totalmente pintada. Agora é possível ter quantas ocorrências necessárias com valor do atributo nome: Maria Pereira e idade: 23 anos.
+
+        Na entidade Médico há um atributo identificador natural, CRM. Cada médico possui um número único, que não pode ser repetido para nenhum outro médico.
+
+        Em Produto não há nenhum atributo identificador natural. Então é preciso criar um identificador artificial que seja único. Nesse caso, é o Código.
+
+        A entidade Pessoa também contém um campo monovalorado obrigatório, atômico e único, o CPF. Ele pode ser usado como identificador da tabela.
+
+        Pedido é outro exemplo de atributo artificial, pois não existe nenhum atributo que seja único nessa entidade. Então, é criado o atributo Número.
+
+
+    * Identificado Composto
+
+    Existem casos em que apenas um atributo identificador não é o suficiente para torná-lo uma ocorrência da entidade única. Então você deverá criar os atributos necessários para tornar a ocorrência de entidade única.
+
+    Suponha um edifício com quatro apartamentos por andar. No primeiro andar estão os apartamentos de número 1, 2, 3, 4; o segundo andar também tem apartamentos 1, 2, 3, 4 e assim por diante. Num caso como esse, em que os números dos apartamentos são iguais, fica impossível dizer qual ocorrência de apartamento se deseja. Para resolver esse problema, você deverá criar o atributo identificador Andar. 
+
+
+    * Atributo identificador de relacionamento
+
+    Assim como as ocorrências de entidade devem ser únicas, para não causar problemas nos bancos de dados, as ocorrências de relacionamento também. A diferença é que, nos relacionamentos, não é preciso colocar atributos identificador em todos eles, pois os valores das ocorrências de entidades relacionadas já fazem isso.
+
+    O identificador da entidade Estúdio é Código, e o identificador da entidade Ator é CPF. O identificador do relacionamento Contratação é o Código da ocorrência da entidade Estúdio e o CPF da ocorrência da entidade Ator. Porém, existem casos em que apenas as ocorrências das entidades relacionadas não são suficientes para identificar um relacionamento.
+
+    Um ator pode ter várias atuações em diversos filmes. Um filme pode ter vários atores em atuações diferentes. Como é possível identificar uma instância de atuação se um ator pode representar personagens diferentes num mesmo filme? Você deverá criar um atributo que identifique o personagem, por exemplo. 
+
+## Relacionamento Identificador
+
+    Os relacionamentos identificadores são mais conhecidos como “Entidade fraca”. Entidades fracas são aquelas que dependem de outras para existir. É o relacionamento que identifica a entidade.
+
+    Um Item_pedido só pode ser identificado se estiver relacionado a um Pedido. Caso o Pedido não exista o Item do pedido também não pode existir. Outro ponto em que você deve pensar é que a entidade Item_pedido está identificada pelo relacionamento.
+
+    Nesse caso são duas entidades fracas: Apartamento e Andar. Logo, para um apartamento existir, deve haver um andar e um prédio associado a ele; e para um andar existir deve haver um prédio associado a ele. Uma característica da entidade fraca é que ela sempre se relaciona com apenas uma ocorrência da entidade forte, em relação a ela.
+
+
+
 
 
 
