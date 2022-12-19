@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #6B2AEE;
+    --secondary: #02e7d9;
+    --light-gray: #e5e5e5;
+    --dark-grey: #707070;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* HEADER */
+
+header {
+    padding: 1rem 0;
+    box-shadow: 1px 0 1rem rgba(98, 98, 98, 0.25);
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerButtons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.btn-contained {
+    color: whitesmoke;
+    padding: 0.75rem 2rem;
+    border-radius: 1.5rem;
+    background-color: var(--primary);
+}
+
+.btn-void {
+    font-weight: 600;
+    color: var(--primary);
+    padding: 0.75rem 2rem;
+    border-radius: 1.5rem;
+    background-color: #FAFAFA;
+}
+
+/* Section Principal */
+
+.principal {
+    background-size: 70%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-image: url(../images/bg-image-principal.png);
+}
+
+.principalSection {
+    display: flex;
+    padding: 2.25rem 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.principalDescription {
+    gap: 1.25rem;
+    display: flex;
+    max-width: 24rem;
+    flex-direction: column;
+}
+
+.principalDescription p {
+    font-size: 1.25rem;
+    color: var(--dark-grey);
+    padding-left: 2rem;
+}
+
+.principalDescription a {
+    text-align: center;
+    padding: 1.5rem;
+
+    font-size: 1.125rem;
+    border-radius: 3rem;
+}
+
+.principalDiaristaText {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 4rem;
+    color: var(--dark-grey);
+    border: solid 2px var(--light-gray);
+
+    position: relative;
+}
+
+.principalDiaristaText::after {
+    content: '';
+    position: absolute;
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+
+    background-color: var(--light-gray);
+    background-image: url(../images/icon-search-principal.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50%;
+
+    top: -1.6rem;
+    right: 0;
+}
+
+.principalDiaristaText span {
+    color: var(--primary);
+}
+
+.principalImage {
+    position: relative;
+}
+
+.principalImage::after, .principalImage::before {
+        content: '';
+        right: 0;
+        position: absolute;
+        border-radius: 50%;
+}
+
+.principalImage::before {
+    width: 8rem;
+    height: 8rem;
+    top: 5rem;
+    background-color: var(--primary);
+}
+
+
+.principalImage::after {
+    width: 2rem;
+    height: 2rem;
+    bottom: 0;
+    background-color: var(--light-gray);
+    z-index: 10;
+}

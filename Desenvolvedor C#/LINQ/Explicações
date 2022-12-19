@@ -1,0 +1,57 @@
+## Realizando consultas com LINQ
+
+    * As três partes de uma consulta:
+        - Fonte de Dados
+        - Consulta
+        - Execução da Consulta
+
+    //1. A fonte de dados
+    int[] numeros = new int[5] {0,1,2,3,4}
+
+    //2. A consulta
+    var consulta = from num in numeros select num;
+
+    //3. Execução da Consulta
+    foreach (int num in consulta)
+    {
+        Console.WriteLine(num);
+    }
+
+        * Execução adiada: Acontece quando a consulta é realizada apenas no terceiro momento e gera o array em memória, o que evita que as informações ocupem espaço de memória, antes do que são realmente necessárias.
+
+    * Sintaxes de Consultas LINQ
+
+        ** Query Sintax 
+            - Declarativa
+            - Semelhante ao SQL
+            - Fácil Leitura
+
+        ** Method Sintax
+            - Imperativa
+            - Métodos em Cadeia
+            - Expressões Lambda
+
+## Listas Genéricas
+
+No framework .NET dispomos, há bastante tempo, de várias classes que implementam coleções de dados, utilizando inclusive os modelos de lista e fila. Essas classes estão presentes no namespace System.Collections e as principais são:
+
+Stack (pilha);
+Queue (fila);
+Hashtable (dicionário);
+ArrayList (lista).
+Cada uma dessas classes possui suas particularidades referentes ao funcionamento, e de fato atendem boa parte das necessidades. A principal limitação delas está no fato de que todas trabalham com elementos do tipo object. Isso é necessário para que todas sejam abrangentes, não fixando o tipo de dados que irão conter.
+
+Apesar de essa flexibilidade ser útil às vezes, de forma geral ela implica na realização de muitas conversões de dados, pois quando recuperamos um item da lista, normalmente sabemos o seu tipo e precisamos tratá-lo como tal. Para isso, precisamos fazer um cast do tipo object para o tipo desejado, e esse processo quando realizado muitas vezes, pode gerar impactos na performance.
+
+Para superar essa limitação foram inseridas as coleções genéricas, tão logo os tipos genéricos passaram a fazer parte da linguagem. Essa classes estão contidas no namespace System.Collections.Generic e as principais são:
+
+Stack<T> (pilha);
+Queue<T> (fila);
+LinkedList<T> (lista encadeada);
+SortedList<T> (lista ordenada);
+List<T> (lista);
+Dictionary<TKey, TValue> (dicionário),
+Com as listas genéricas nós especificamos o tipo de dados que elas irão conter no momento da sua declaração. E a partir daí, ao acessar os elementos, não precisamos mais realizar conversões, pois o compilador já saberá com qual tipo estamos lidando. Além disso, contaremos com os recursos do próprio IDE para auxiliar no desenvolvimento, como a opção de intellisense/autocomplete a partir do tipo de dado especificado.
+
+## Realizando Consultas LINQ com Query Sintax
+
