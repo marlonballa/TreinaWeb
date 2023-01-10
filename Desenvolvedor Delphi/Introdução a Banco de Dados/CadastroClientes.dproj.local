@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/12/21 15:08:05.000.810,=C:\Users\Marlon Balla\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/12/22 08:17:41.000.303,C:\Users\Marlon Balla\Desktop\TreinaWeb\Desenvolvedor Delphi\Introdução a Banco de Dados\UntCadastroClientes.dfm=C:\Users\Marlon Balla\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/12/22 08:17:41.000.295,C:\Users\Marlon Balla\Desktop\TreinaWeb\Desenvolvedor Delphi\Introdução a Banco de Dados\UntCadastroClientes.pas=C:\Users\Marlon Balla\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/12/22 08:17:50.000.497,C:\Users\Marlon Balla\Desktop\TreinaWeb\Desenvolvedor Delphi\Introdução a Banco de Dados\CadastroClientes.dproj=C:\Users\Marlon Balla\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

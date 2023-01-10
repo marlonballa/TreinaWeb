@@ -1,0 +1,31 @@
+unit UntCadastroClientes;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Datasnap.DBClient;
+
+type
+  TfrmBancoDadosComDelphi = class(TForm)
+    cdsClientes: TClientDataSet;
+    cdsClientesNomeCliente: TStringField;
+    cdsClientesRazaoSocial: TStringField;
+    cdsClientesDataCadastro: TDateTimeField;
+    cdsClientesCPFCNPJ: TStringField;
+    cdsClientesEndereco: TStringField;
+    cdsClientesCEP: TStringField;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmBancoDadosComDelphi: TfrmBancoDadosComDelphi;
+
+implementation
+
+{$R *.dfm}
+
+end.

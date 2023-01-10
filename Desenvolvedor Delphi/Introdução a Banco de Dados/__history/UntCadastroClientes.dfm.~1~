@@ -1,0 +1,53 @@
+object frmBancoDadosComDelphi: TfrmBancoDadosComDelphi
+  Left = 0
+  Top = 0
+  Caption = 'Banco de Dados com Delphi'
+  ClientHeight = 201
+  ClientWidth = 447
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object cdsClientes: TClientDataSet
+    PersistDataPacket.Data = {
+      C00000009619E0BD010000001800000006000000000003000000C0000B4E6F6D
+      65436C69656E746501004900000001000557494454480200020028000B52617A
+      616F536F6369616C01004900000001000557494454480200020032000C446174
+      61436164617374726F080008000000000007435046434E504A01004900000001
+      0005574944544802000200140008456E64657265636F01004900000001000557
+      4944544802000200C80003434550010049000000010005574944544802000200
+      09000000}
+    Active = True
+    Aggregates = <>
+    Params = <>
+    Left = 408
+    Top = 8
+    object cdsClientesNomeCliente: TStringField
+      FieldName = 'NomeCliente'
+      Size = 40
+    end
+    object cdsClientesRazaoSocial: TStringField
+      FieldName = 'RazaoSocial'
+      Size = 50
+    end
+    object cdsClientesDataCadastro: TDateTimeField
+      FieldName = 'DataCadastro'
+    end
+    object cdsClientesCPFCNPJ: TStringField
+      FieldName = 'CPFCNPJ'
+    end
+    object cdsClientesEndereco: TStringField
+      FieldName = 'Endereco'
+      Size = 200
+    end
+    object cdsClientesCEP: TStringField
+      FieldName = 'CEP'
+      Size = 9
+    end
+  end
+end

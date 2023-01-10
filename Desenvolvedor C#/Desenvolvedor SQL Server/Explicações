@@ -1,0 +1,138 @@
+## Explicações
+
+    O SQL Server funciona em *instâncias*, o que permite a existência de vários bancos de dados em cada uma delas.
+
+    Por meio do services.msc é possível ver a aplicação rodando
+
+    A utilização de instâncias permite a divisão dos banco de dados, de acordo com as regras de negócio da aplicação.  
+
+    * O SQL Server não reconhece conexão por base no IP, para isso é necessário definir esta opção. 
+
+## Tipos de Dados Numéricos - FIXOS - do SQL Server
+
+    * São tipos de dados que guardam números e possuem um tamanho fixo. 
+
+    ## BigInt
+        - Utilizado para armazenar números inteiros, com o seu range indo de: -2^63 até 2^63 - 1
+        - Ocupa 8bytes de espaço no .mdf 
+
+    ## Int 
+        - Utilizado para armazenar númeris inteiros, com o sue range indo de -2^31 até 2^31 -1
+        - Ocupa 4bytes de espaço no .mdf
+
+    ## SmallInt
+        - Utilizado para armazenar números inteiros, com o seu range indo de -2^15 até 2^15 -1
+        - Ocupa 2bytes de espaço no .mdf
+
+    ## TinyInt
+        - Utilizado para armazenar números inteiros, com o seu range indo de 0 até 255
+        - Ocupa 1byte de espaço no .mdf
+
+    ## Bit
+        - Utiliza números para se referir a valores booleanos, podendo guardar apenas três informações:
+            - 0
+            - 1
+            - Nulo
+
+        - Qualquer valor diferente de 0 em uma coluna bit no SQL Server é convertida para 1. 
+        
+    ## Decimal 
+        - Permite a representação de números com ponto flutuantes
+        - Equivalente: Numeric
+
+        Precisão x Escala
+        Quantidade de digitos que o tipo irá suportar x Quantos destes digitos serão utilizados para representar a fração 
+
+        Range: -10^38 até 10^38 -1
+            - Entregando 18 casas de precisão. 
+            - O espaço ocupado no .mdf varia de 5 até 17bytes. 
+
+    ## Money and SmallMoney
+        - Utilizados para representar valores monetários
+        - Money: 8Bytes de espaço no .mdf
+        - SmallMoney: 4Bytes de espaço no .mdf
+            - Possuem 4 digitos de escala. 
+
+    ## Float
+        * utilizado para números de notação científica
+        * Ocupa 8bytes de espaço no arquivo .mdf
+        Range: -1,79^308 até -2,23^-308, 0 até 2,23^-308 e 0 até 1,79^308 
+
+    ## Real 
+        * Utilizado para notação científica
+        * Ocupa 4bytes de memória
+
+## Tipo de dados para - Datas e Horas
+
+    ## Date 
+        - Ocupa 3bytes de memória
+        - Armazena apenas informações de data
+        - Range: 01/01/0001 até 31/12/9999
+
+    ## Time
+        - Utilizado para representar apenas horas
+        - Ocupa 5bytes de espaço no .mdf
+        - Range: 00:00h até 23:59:59:9999999h
+
+    ## DateTime 
+        - Ocupa 8Bytes de espaço no arquivo .mdf
+        - Armazena data e hora no formato de 24h
+        - Range: 01/01/1753 até 31/12/9999
+        - Range: 00:00h até 23:59:59:997
+            - Milésimos: 0, 3 e 7
+    
+    ## DateTime2
+        - Exatamente igual ao datetime, mas com uma precisão muito maior. 
+        - Range: 01/01/0001 até 31/12/9999
+        - Range: 00:00h até 23:59:59:9999999h 
+        - Compatível com o padrão ISO
+        - Recomendado pela MicroSoft
+
+    ## DateTime OffSet
+        - Exatamente igual ao DateTime2
+        - Armazena informações de fuso horário
+
+    ## Small DateTime
+        - Ocupa 4bytes no arquivo .mdf
+        - Range: 01/01/1900 até 06/06/2079
+        - Range: 00:00h até 23:59:59h 
+
+## Tipos de Dados utilizados para representar caracteres
+
+    ## Char
+        - Define uma cadeia de caracteres de tamanho fixo
+        - O espaço utilizado será igual ao tamanho definido para o campo
+        - Precisão: 8000 caracteres
+
+    ## VarChar
+        - Permite que seja armazenado textos com o tamanho variável
+        - Ocupa em memória, o tamanho do conteúdo que armazenou + 2bytes. 
+        - Precisão: Até 8000 caracteres. 
+    
+    ## Text
+        - Armazena até 2^31-1 caracteres
+
+## Entendendo os tipos de dados para Caracteres UniCode
+
+    N -> Representação do UniCode: Coletion
+        - Como o banco de dados deverá interpretar o conjunto de caracteres que será armazenado. 
+        - É uma referência ao espaço geográfico de onde o banco será utilizado, permitindo que seja possível utilizar caracteres de todas as línguas. 
+
+    ## NCHAR, ## NVARCHAR, ## NTEXT
+        - Exatamente iguais aos tipos Char, VarChar e Text, mas necessitam do dobro de espaço de armazenamento + 2bytes. 
+        - E são capazes de armazenar no formato unicode. 
+         
+## Tipos de Dados: Binários
+
+    - Permitem que seja possível armazenar informações binárias (como uma imagem, por exemplo)
+
+    ## Binary
+        - Permite o armazenamento de bytes, com tamanho definido. 
+
+    ## VarBinary
+        - Permite o armazenamento de bytes, com tamanho variável. 
+
+    ## Image
+        - não é utilizado para armazenar imagens (como o nome sugere), embora seja possível
+        - Possui um poder de armazenamento muito maior do que o do binary e varbinary 
+

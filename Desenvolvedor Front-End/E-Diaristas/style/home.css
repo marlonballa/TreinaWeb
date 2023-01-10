@@ -153,7 +153,7 @@ header {
 /* Why Section*/
 
 .whySection {
-    padding: 5rem 0;
+    padding: 5rem 0 8rem;
     margin-top: -7.5rem;
     position: relative;
     color: var(--light-gray);
@@ -215,4 +215,174 @@ header {
 
 .whySectionItem i {
     font-size: 2.25rem;
+}
+
+/* Section Faqs*/
+
+.faqsSection {
+    padding-bottom: 3rem;
+}
+
+.divisionWave {
+    width: 100vw;
+    height: 5rem;
+
+    background-image: url(../images/wave.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: bottom;
+
+    position: relative;
+    top: -3rem;
+}
+
+.presentationContainerFaqs {
+    color: var(--dark-grey);
+    text-align: center;
+    margin-top: -3rem;
+}
+
+.presentationContainerFaqs h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.presentationContainerFaqs p {
+    margin: 1rem 0;
+    font-size: 1.25rem;
+}
+
+.presentationContainerFaqs hr {
+    width: 10vw;
+    margin: 0 auto 1rem;
+}
+
+.accordion {
+    background-color: white;
+    color: var(--dark-grey);
+    padding: 1rem;
+    width: 100%;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.accordion h5 {
+    font-size: 1rem;
+    font-weight: 900;
+    margin: 0;
+
+}
+
+.accordion img {
+    width: 0.75rem;
+}
+
+.accordion, .answerPanel {
+    text-align: left;
+    border: 2px solid var(--light-gray);
+
+    color: #2C3A57;
+}
+
+.answerPanel {
+    padding: 0 1rem;
+    overflow: hidden;
+
+    display: none;
+    border-top: none;
+
+    font-size: 1rem;
+}
+
+.minusIcon {
+    display: none;
+}
+
+.active .plusIcon {
+    display: none;
+}
+
+.active .minusIcon {
+    display: inline-block;
+}
+
+.active {
+    border-bottom: none;
+}
+
+/* Footer */
+
+footer {
+    color: white;
+    padding: 5rem 0;
+    background-color: var(--primary);
+}
+
+.footerContent {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 3rem;
+}
+
+.footerItem {
+    color: white;
+    font-weight: 300;
+}
+
+.footerItem h4 {
+    font: 1.25rem;
+    font-weight: 600;
+
+    margin-bottom: 0.5rem;
+}
+
+.footerItem ul {
+    list-style: none;
+}
+
+.footerItem ul li a {
+    color: white;
+    margin-bottom: 10rem;
+
+    text-decoration: underline;
+}
+
+.footerItem ul li a:hover {
+
+    padding: 0.5rem;
+    font-weight: 600;
+    color: var(--primary);
+    background-color: white;
+}
+
+
+.socialMedia {
+    display: flex;
+    align-items: center;
+
+    gap: 0.5rem;
+}
+
+.socialMedia a {
+     width: 3rem;
+     height: 3rem;
+
+     border-radius: 50%;
+     background-color: #581ECD;
+     display: grid;
+     place-items: center;
+}
+
+.socialMedia a:hover {
+    transform: scale(1.1);
+}
+
+.socialMedia i {
+    color: var(--light-gray);
+    font-size: 1.5rem;
 }

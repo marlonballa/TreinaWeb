@@ -32,12 +32,12 @@ type
     procedure Button6Click(Sender: TObject);
   private
     { Private declarations }
-      function Operations (firstNumber, secondNumber, operation : Integer) : Integer;
+      function Operations (firstNumber, secondNumber, operation : Double) : Double;
   public
     { Public declarations }
   end;
 
-  function TfrmOperadoresAritmeticos.Operations(firstNumber, secondNumber, operation : Integer) : Integer;
+  function TfrmOperadoresAritmeticos.Operations(firstNumber, secondNumber, operation : Double) : Double;
     var result : Double;
     begin
         case operation of

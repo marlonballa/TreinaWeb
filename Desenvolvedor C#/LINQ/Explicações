@@ -55,3 +55,110 @@ Com as listas genéricas nós especificamos o tipo de dados que elas irão conte
 
 ## Realizando Consultas LINQ com Query Sintax
 
+## Delegates
+
+    * Estruturuas que apontam para uma função, de modo que seja possível acionar essa função (método) a partir de um objeto delegate, além de ser possível atribuir a este objeto diferentes funções que atendam ao critério de estrutura estabelecido por este delegate. 
+
+    using System; 
+
+
+    namespace nameOfNameSpace
+    {
+        //delegate <typeOfReturn> nameFunction(string parameterExample);
+        //Aponta para qualquer método/função que possua essa estrutura, ou seja, tenha o tipo de retorno informado e aceite parâmetros com as características exigidas. 
+
+        delegate void ExibirMensagem(string texto);
+
+        class Program
+        {
+            static void main(string[] args)
+            {
+                //Criando um objeto do tipo "Exibir Mensagem"
+                ExibirMensagem exibir = ExibirInformacoes;
+
+                //Chamando o delegate
+                exibir("Mensagem de teste");
+                //O compilador entende que atribuido a este objeto está o método "ExibirInformação"
+            }
+
+            static void ExibirInformacoes(string informacoes)
+            {
+                Console.WriteLine($"informação: { informacoes }")
+            }
+        }
+    }
+
+## Delegates essenciais do LINQ: Action, Func e Predicate
+
+    * Possuem uma estrutura pré-fedinida, além de estarem amplamente presentes nos delegates do LINQ. 
+
+    * Action<genericType> nameExample 
+        - Recebe como parâmetro genérico um tipo de dado, que deve ser o mesmo que será recebido pelo delegate e obrigatoriamente recebe métodos que não retornam um valor. 
+
+    * Func<genericType, genericType, returnGenericType> nameExample
+        - Recebe tipos de dados por parâmetro genérico, podendo receber vários parâmetros (16 max) e retornar informações de um determinado tipo. 
+
+    * Predicate<genericType> nameExample
+        - recebe um objeto e retorna um valor booleano, o que faz com que seja amplamente utilizado para a validação de critérios. 
+
+    using System; 
+    namespace nameOfNameSpace
+    {
+        delegate void ExibirMensagem(string texto);
+        class Program
+        {
+            static void main(string[] args)
+            {
+                Action<string> exibir = ExibirInformacoes;
+                exibir("Teste de chamada ao método"); 
+
+                Func<int, int, int> realizarOperacao = Somar;
+                Console.WriteLine(realizarOperacao(1, 2));
+
+                Predicate<int> ehPar = itsPair;
+                Console.WriteLine(ehPar(1); )
+            }
+
+            static void ExibirInformacoes(string informacoes)
+            {
+                Console.WriteLine($"informação: { informacoes }")
+            }
+
+            static int Somar(int a, int b)
+            {
+                return a + b;
+            }
+            
+            static bool itsPair(int a)
+            {
+                return a % 2 == 0;
+            }
+        }
+    }
+
+## Introdução às Expressões Lambda
+
+    * É uma forma simples de escrever um método anônimo
+    * Estrutura:
+        (lista de parâmetros) => Corpo do método
+
+        => Operador Lambda
+
+        (similar as array functions do JavaScript)
+
+    delegate void ExibirMensagem(string texto);
+        class Program
+        {
+            static void main(string[] args)
+            {
+                Action<string> exibir = informacoes => Console.WriteLine($"informação: { informacoes }");;
+                exibir("Teste de chamada ao método"); 
+
+                Func<int, int, int> realizarOperacao = (a, b) => a + b;
+                Console.WriteLine(realizarOperacao(1, 2));
+
+                Predicate<int> ehPar = a => a % 2 == 0;
+                Console.WriteLine(ehPar(1); )
+            }
+        }
+    
